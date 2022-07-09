@@ -5,11 +5,13 @@
 // -4, 16 -> да
 // 25, 5 -> да
 // 8,9 -> нет
-Console.WriteLine("Является ли одно число, квадратом другого");
+Console.WriteLine("Является ли одно число, квадратом другого?");
 Console.Write("введите первое число: ");
 int firstNum = Convert.ToInt32(Console.ReadLine());
 Console.Write("введите второе число: ");
 int secondNum = Convert.ToInt32(Console.ReadLine());
-if (firstNum % secondNum == 0) Console.WriteLine($"{firstNum}, {secondNum} -> ДА");
-else if (secondNum % firstNum == 0) Console.WriteLine($"{firstNum}, {secondNum} -> ДА");
+// if (firstNum % secondNum == 0) Console.WriteLine($"{firstNum}, {secondNum} -> ДА");
+// else if (secondNum % firstNum == 0) Console.WriteLine($"{firstNum}, {secondNum} -> ДА");
+// else Console.WriteLine($"{firstNum}, {secondNum} -> НЕТ");
+if (firstNum % secondNum == 0 ||secondNum % firstNum == 0) Console.WriteLine($"{firstNum}, {secondNum} -> ДА");
 else Console.WriteLine($"{firstNum}, {secondNum} -> НЕТ");
