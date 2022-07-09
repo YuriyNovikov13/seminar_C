@@ -7,8 +7,7 @@
 Console.Write("введите число: ");
 int firstNum = Convert.ToInt32(Console.ReadLine());
 
-if (firstNum%7==0)
-if (firstNum%23==0) Console.WriteLine ($"{firstNum} -> да");
-else Console.WriteLine ($"{firstNum} -> нет");
+if (firstNum % 7 == 0 && firstNum % 23 == 0) Console.WriteLine($"{firstNum} -> да");
+else Console.WriteLine($"{firstNum} -> нет");
 
 
