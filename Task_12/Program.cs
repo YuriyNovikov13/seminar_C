@@ -16,3 +16,8 @@ if (firstNum < secondNum) Console.WriteLine($"Числа {firstNum} , {secondNum
 else if (firstNum == division * secondNum) Console.WriteLine ($"Числа {firstNum}, {secondNum} -> Кратно");
 else Console.WriteLine($"Числа {firstNum} , {secondNum} -> не кратно, остаток: {firstNum - division * secondNum}");
 ($"Числа {firstNum} , {secondNum} -> Кратно");
+// ..решение через терминальную операцию 
+int firstNum = Convert.ToInt32(Console.ReadLine());
+int secondNum = Convert.ToInt32(Console.ReadLine());
+string result =firstNum%secondNum==0 ? $"Числа {firstNum} , {secondNum} -> Кратно" : $"{firstNum} % {secondNum} = {firstNum%secondNum}";
+Console.WriteLine (result);
